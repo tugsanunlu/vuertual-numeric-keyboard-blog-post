@@ -1,6 +1,6 @@
 # vuertual-numeric-keyboard
 
-![vuertual-numeric-keyboard](https://user-images.githubusercontent.com/2070277/60755161-42057000-9ff4-11e9-9a66-9eb3bfb7e82a.png)
+![vuertual-numeric-keyboard](https://user-images.githubusercontent.com/2070277/63688257-843a7900-c80f-11e9-9915-0dbaf9ec5d0e.gif)
 
 ## Build Setup
 
