@@ -13,17 +13,17 @@
 </template>
 
 <script>
-import "bootstrap/dist/css/bootstrap.min.css";
-import _ from "lodash";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import _ from 'lodash';
 
 export default {
-  props: ["selfValue"],
+  props: ['selfValue'],
   data() {
     return {
-      value: "",
+      value: '',
       keys: [...Array(10).keys()],
-      keyTheme: "btn-keyboard",
-      buttonTheme: "btn-danger"
+      keyTheme: 'btn-keyboard',
+      buttonTheme: 'btn-danger',
     };
   },
   methods: {
@@ -35,22 +35,21 @@ export default {
       this.shuffle();
     },
     clear(type) {
-      type == "all"
-        ? (this.value = "")
-        : (this.value = this.value.substring(0, this.value.length - 1));
-    }
+      if (type === 'all') this.value = '';
+      else this.value = this.value.substring(0, this.value.length - 1);
+    },
   },
   watch: {
     value() {
-      this.$emit("pressed", this.value);
+      this.$emit('pressed', this.value);
     },
     selfValue() {
       this.value = this.selfValue;
-    }
+    },
   },
   created() {
     this.shuffle();
-  }
+  },
 };
 </script>
 

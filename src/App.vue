@@ -19,15 +19,15 @@
 </template>
 
 <script>
-import Keyboard from "./components/Keyboard";
+import Keyboard from './components/Keyboard.vue';
 
 export default {
   components: { Keyboard },
   data() {
     return {
-      value: ""
+      value: '',
     };
-  }
+  },
 };
 </script>
 
